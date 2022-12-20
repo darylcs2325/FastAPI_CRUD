@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "etl-project"
+version = "0.1.0"
+description = ""
+authors = ["Daryl <darylcs2325@gmail.com>"]
+readme = "README.md"
+packages = [{include = "etl_project"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.88.0"
+pandas = "^1.5.2"
+uvicorn = "^0.20.0"
+sqlalchemy = "^1.4.45"
+psycopg2-binary = "^2.9.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
