@@ -20,7 +20,7 @@ def create_user(user: User):
     }
     result = conn.execute(table_users.insert().values(new_user))
     print(result)
-    return 'Hola Papá'
+    return 'Error'
 
 @user.get('/users/{id}', response_model=User, tags=['Users'])
 def get_user_id(id:str):
